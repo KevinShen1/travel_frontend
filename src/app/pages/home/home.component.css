@@ -1,0 +1,12 @@
+.content-layout {
+  height: calc(100vh - 67px);
+  overflow-y: auto;
+}
+
+tr > th {
+  text-align: center;
+}
+
+tr > td {
+  text-align: center;
+}

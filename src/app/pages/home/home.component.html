@@ -1,0 +1,42 @@
+<nz-layout class="content-layout">
+  <nz-space nzDirection="vertical">
+    <nz-header *nzSpaceItem class="p-5 h-96">
+      <nz-carousel nzAutoPlay>
+        <div nz-carousel-content *ngFor="let index of array">
+          <a [href]="index.url" target="_blank">
+            <img class="p w-full max-h-96" [src]="index.img" alt="" />
+          </a>
+        </div>
+      </nz-carousel>
+    </nz-header>
+
+    <h1 *nzSpaceItem class="ml-5"><img src="assets\images\header-2.png" class="h h-7 w-7" /> 我的旅遊日記 </h1>
+
+    <nz-content *nzSpaceItem class="px-5">
+
+      <div class="">
+
+        <nz-table #basicTable [nzData]="listOfData" nzBordered="true">
+          <thead>
+            <tr>
+              <th nzWidth="70px">圖片</th>
+              <th nzWidth="100px">名稱</th>
+              <th nzWidth="300px">地址</th>
+              <th>簡介</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of basicTable.data">
+              <td><img src="https://lh5.googleusercontent.com/p/AF1QipO-_6l-B8uEBPPlkuNOTeQR1-HrZ8XjrnwhysHV=w408-h270-k-no"/></td>
+              <td>石門洞五龍宮</td>
+              <td>253新北市石門區中央路37-2號</td>
+              <td>
+                無極混元玄聖祖〈玄玄上人或化王老仙師〉，玄玄高上帝也。由一 之感召。化三清而誕育五老。統萬靈於御宇。總九而肇冹兩儀，乃一鈹而生天。生地。再鈹而生物。生人作宇宙萬靈之主
+              </td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </div>
+    </nz-content>
+  </nz-space>
+</nz-layout>
