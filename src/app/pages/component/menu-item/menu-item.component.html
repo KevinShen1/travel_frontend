@@ -1,0 +1,9 @@
+<ul  *ngFor="let menu of data">
+  <li nz-submenu nzPlacement="bottomLeft" nzTitle="{{menu.progNameTw}}" *ngIf="menu.progType == 'group'">
+    <div class="max-h-[calc(100vh/2)]">
+      <app-menu-item [data]="menu.children"></app-menu-item>
+    </div>
+  </li>
+  <li nz-menu-item *ngIf="menu.progType == 'url'"><a [href]="menu.progUrl" target="_blank">{{menu.progNameTw}}</a></li>
+  <li nz-menu-item *ngIf="menu.progType == 'function'" (click)="changePage(menu)">{{menu.progNameTw}}</li>
+</ul>

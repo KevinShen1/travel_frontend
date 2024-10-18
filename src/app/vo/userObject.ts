@@ -7,6 +7,7 @@ export class UserObject {
   private _userId = '';
   private _userName = '';
   private _isActive = false;
+  private _funcAuth: any;
 
 
   constructor() { }
@@ -19,4 +20,7 @@ export class UserObject {
 
   set isActive(val: boolean) { this._isActive = val; }
   get isActive(): boolean { return this._isActive; }
+
+  set funcAuth(val: any) { this._funcAuth = val; }
+  get funcAuth(): any { return this._funcAuth; }
 }

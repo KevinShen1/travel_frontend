@@ -1,1 +1,33 @@
 @import "tailwindcss/utilities";
+
+.ant-card-head-title {
+  padding: 5px;
+  font-weight:bold;
+  /* display: inline-block; */
+  /* flex: 1; */
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+}
+
+.ant-card-head {
+  color: #4F4F4F;
+  background: #B3D9D9;
+  padding: 0 12px;
+  min-height: 36px;
+  /* margin-bottom: -1px; */
+  /* font-weight: 500; */
+  /* font-size: 16px; */
+  /* border-bottom: 1px solid #f0f0f0; */
+  /* border-radius: 2px 2px 0 0; */
+}
+
+th {
+background-color:#166972 !important;
+color: white !important;
+text-align: center !important;
+}
+
+td {
+  text-align: center !important;
+}

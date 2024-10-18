@@ -12,5 +12,5 @@ export const environment = {
   // keycloak: keycloakConfig,
   // silentCheckSsoRedirectUri: window.location.origin + '/tr-eip-web/assets/silent-check-sso.html',
   // keycloakExcludedUrls: [],
-  travelAPIUrl: 'http://127.0.0.1:8080'
+  travelAPIUrl: 'http://127.0.0.1:2080'
 };

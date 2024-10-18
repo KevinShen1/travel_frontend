@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroAntdModule } from './ng-zorro-antd.module';
 import { HomeComponent } from './pages/home/home.component';
 import { UserMgmtComponent } from './pages/user-mgmt/user-mgmt.component';
+import { MenuItemComponent } from './pages/component/menu-item/menu-item.component';
 
 registerLocaleData(zh);
 
@@ -20,7 +21,8 @@ registerLocaleData(zh);
   declarations: [
     AppComponent,
     HomeComponent,
-    UserMgmtComponent
+    UserMgmtComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ registerLocaleData(zh);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_TW }

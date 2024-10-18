@@ -49,20 +49,9 @@
             <div nz-row class="w-full">
               <div class="float-left" nz-col nzFlex="auto">
                 <ul nz-menu nzMode="horizontal" class="w-fit">
-                  <li nz-submenu class="!pr-1" nzPlacement="bottomLeft" nzTitle="旅遊小站" nzIcon="car">
-                    <ul>
-                      <li nz-menu-item>旅遊分享</li>
-                    </ul>
-                  </li>
-                  <li nz-submenu class="!pr-1" nzPlacement="bottomLeft" nzTitle="旅遊網相關網站" nzIcon="global">
-                    <ul>
-                      <li nz-menu-item><a href="https://www.booking.com/" target="_blank">Booking</a></li>
-                    </ul>
-                  </li>
-                  <li nz-submenu class="!pr-1" nzPlacement="bottomLeft" nzTitle="系統相關設定" nzIcon="setting">
-                    <ul>
-                      <li nz-menu-item>帳號權限設定</li>
-                    </ul>
+                  <li nz-submenu class="!pr-1" nzPlacement="bottomLeft" nzTitle="{{menu.progNameTw}}"
+                    nzIcon="{{menu.progIcon}}" *ngFor="let menu of this.userObject.funcAuth">
+                    <app-menu-item [data]="menu.children"></app-menu-item>
                   </li>
                 </ul>
               </div>

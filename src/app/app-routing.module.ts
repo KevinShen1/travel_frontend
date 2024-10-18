@@ -12,7 +12,7 @@ const routes: Routes = [
   // 首頁
   { path: 'home', component: HomeComponent },
   //帳號權限
-  { path: 'user-mgmt', component: UserMgmtComponent }
+  { path: 'userMgmt', component: UserMgmtComponent }
 ];
 
 @NgModule({
